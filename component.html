@@ -94,6 +94,9 @@
               self.broadcast("finished");
             }
           }, false );
+          if (this.make.slice( -1 ) !== "_") {
+            this.make = this.make + "_";
+          }
           iframe.src = this.make;
         },
         currenttimeChanged: function() {
